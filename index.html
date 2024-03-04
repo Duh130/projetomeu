@@ -3,56 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>meu jogo favorito</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>Bootstrap Avançado</title>
 </head>
 <body>
-    <header>
-        <div class="container1">
-            <h1>
-                Meu time de futebol favorito
-            </h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Associazione Calcio Milan</a></li>
-                    <li><a href="#">historia do milan</a></li>
-                </ul>
-            </nav>
-        </div> 
-    </header>
-    <body>
-        <section>
-    <div class="container">
-            <img src="img/AC-Milan-e1654022409697.webp" alt="time de futebol milan">
-            <div>
-            <h2>Associazione Calcio Milan</h2>   
-                <p>
-                    Associazione Calcio Milan, frequentemente abreviado como AC Milan ou Milan, é um clube de futebol italiano com sede em Milão. Devido às suas relevantes conquistas, o clube é considerado um dos mais importantes do mundo. Partilha com o seu maior rival, a Internazionale, o Estádio Giuseppe Meazza, também conhecido como San Siro, que tem capacidade para 80.018 espectadores e é o palco do clássico de Milão, o Derby della Madonnina.[1]
-                </p>
+
+<div class="container">
+    <div id="carouselExample" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="imagens/free-photo-of-preto-e-branco-p-b-natureza-grama.jpeg" alt="First slide">
             </div>
-    </div>
-        </section>
-        <section>
-    <div class="container">
-                <img src="img/fff386ecd4ca0b28b311.png" alt="imagem do milan">
-                <div>
-                <h2>
-                    Historia do Milan
-                </h2>
-                <p>
-                    O Milan começou como um clube de críquete, quando três britânicos, Kilpin, Allison e Davies, propuseram a ideia a dois homens de negócios, Alfred Edwards e Herbert Kilpin. Os dois criaram o clube no dia 16 de dezembro de 1899.[5] Edwards tornou-se o primeiro presidente do Milan Cricket and Football Club. Edwards e Kilpin eram da cidade de Nottingham, Grã-Bretanha, por esse fato o nome da cidade de Milão (Milan, em inglês) não foi traduzido para o italiano, Milano, em respeito às suas origens. A partida inaugural foi disputada em março de 1900, contra outro time de Milão, chamado Mediolanum.
-                </p>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="imagens/pexels-photo-13621773.jpeg" alt="Second slide">
             </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="imagens/pexels-photo-1774927.webp" alt="Third slide">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-        </section>
-    <footer>
-        <p>
-        Ligações externas
-        
-        <a href="site oficial">https://www.acmilan.com/it</a>
-        <br>
-        <a href="site de pesquisa">https://pt.wikipedia.org/wiki/Associazione_Calcio_Milan</a>
-        </p>
-    </footer>
+</div>
+
+
+
+
+<div class="container mt-4">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+        <div class="col">
+            <div class="card mb-4">
+                <img src="imagens/free-photo-of-sentado-jardim-zoologico-zoo-zoologico.jpeg" class="card-img-top" alt="Imagem Card 1">
+                <div class="card-body">
+                    <h5 class="card-title">Título do Card </h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit necessitatibus harum similique laudantium autem veritatis! Magni, odit? Hic impedit tempora dolorem, rem accusamus sit voluptatem autem! Quo veritatis dolor repellendus!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-4">
+                <img src="imagens/pexels-photo-13621773.jpeg" class="card-img-top" alt="Imagem Card 2">
+                <div class="card-body">
+                    <h5 class="card-title">Título do Card </h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius nostrum hic iste suscipit adipisci commodi nam alias eum, laudantium culpa aliquid reiciendis voluptatibus nemo amet laboriosam odio dolorum sunt laborum.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card mb-4">
+                <img src="imagens/free-photo-of-preto-e-branco-p-b-natureza-grama.jpeg" class="card-img-top" alt="Imagem Card 3">
+                <div class="card-body">
+                    <h5 class="card-title">Título do Card </h5>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo consectetur, earum perspiciatis, tenetur nihil eius incidunt laborum eligendi maxime hic deleniti ex aliquid tempore illum cumque sed fugiat. Aspernatur, iure!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
