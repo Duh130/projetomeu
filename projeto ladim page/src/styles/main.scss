@@ -1,4 +1,6 @@
-@use 'variaveis';
+$corDeFundo: #040714;
+$secondary-color: silver;
+$primary-color: #cc3636;
 
 body {
     font-family: Arial, sans-serif;
@@ -10,26 +12,25 @@ body {
     position: sticky;
     top: 0;
     left: 0;
-    background-color: variaveis.$corDeFundo;
+    background-color: rgb(34, 34, 78);
     transition: background-color .5s ease; 
     z-index: 1;
-    padding: 8px 36px;
+    padding: 2px 2px;
     display: flex;
     justify-content: space-between;
 
     @media (max-width: 768px) {
-        padding: 8px 20px;
+        padding: 8px 10px;
     }
 
     &__logo {
-        max-width: 100px;
+        max-width: 80px;
         width: 100%;
         margin: 5px;
         transition: opacity .5s ease; 
 
         @media (max-width: 768px) {
-            max-width: 54px;
-            max-height: 54px;
+            max-width: 50px; 
         }
     }
     
@@ -55,21 +56,27 @@ body {
 }
 
 .banner {
-    background-color: variaveis.$secondary-color;
+    background-color: $secondary-color;
     color: white;
-    padding: 50px 20px;
+    padding: 50px 0; 
     text-align: center;
 
+    img {
+        max-width: 100%; /* Ajuste para a imagem ocupar 100% da largura do contêiner */
+        height: auto; /* Para manter a proporção da imagem */
+    }
+
     button {
+        margin-top: 20px; /* Adicionei um espaço entre a imagem e o botão */
         padding: 10px 20px;
         font-size: 16px;
         border: none;
-        background-color: variaveis.$primary-color;
+        background-color:$primary-color;
         color: white;
         cursor: pointer;
 
         &:hover {
-            background-color: darken(variaveis.$primary-color, 10%);
+            background-color: darken($primary-color, 10%);
         }
     }
 }
@@ -78,11 +85,12 @@ body {
     padding: 20px;
 
     .grid-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 20px;
+        display: flex; /* Alterado para flex para colocar as imagens lado a lado */
+        justify-content: space-between; /* Distribui as imagens horizontalmente */
+        gap: 20px; /* Adicionado espaçamento entre as imagens */
 
         .imagen {
+            flex: 0 0 calc(33.33% - 20px); /* Calculado o tamanho para exibir três imagens lado a lado com o espaçamento */
             overflow: hidden;
             height: 200px;
 
@@ -97,8 +105,8 @@ body {
 }
 
 footer {
-    background-color: variaveis.$primary-color;
-    color: white;
+    background-color: $primary-color;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 20px;
 }
