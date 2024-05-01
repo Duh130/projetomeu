@@ -19,8 +19,21 @@ body {
     display: flex;
     justify-content: space-between;
 
-    @media (max-width: 768px) {
-        padding: 8px 10px;
+    .button {
+        margin-top: 20px; 
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        background-color: $primary-color;
+        color: white;
+        cursor: pointer;
+
+        @media (max-width: 768px) {
+            font-size: 13px;
+            padding: 8px 11px;
+            height: 40px;
+            letter-spacing: 0;
+        }
     }
 
     &__logo {
@@ -37,20 +50,9 @@ body {
     &__links {
         display: flex;
         align-items: center;
-    }
 
-    &__links__item {
-        margin: 0 5px;
-    }
-
-    .button {
-        height: 40px;
-
-        @media (max-width: 768px) {
-            font-size: 13px;
-            padding: 8px 11px;
-            height: 40px;
-            letter-spacing: 0;
+        &__item {
+            margin: 0 5px;
         }
     }
 }
@@ -62,19 +64,20 @@ body {
     text-align: center;
 
     img {
-        max-width: 100%; /* Ajuste para a imagem ocupar 100% da largura do contêiner */
-        height: auto; /* Para manter a proporção da imagem */
+        max-width: 100%; 
+        height: auto;  
     }
 
-    button {
-        margin-top: 20px; /* Adicionei um espaço entre a imagem e o botão */
+    .button {
+        margin-top: 20px; 
         padding: 10px 20px;
         font-size: 16px;
         border: none;
-        background-color:$primary-color;
+        background-color: $primary-color;
         color: white;
         cursor: pointer;
-
+        text-decoration: none; 
+        
         &:hover {
             background-color: darken($primary-color, 10%);
         }
@@ -85,12 +88,13 @@ body {
     padding: 20px;
 
     .grid-container {
-        display: flex; /* Alterado para flex para colocar as imagens lado a lado */
-        justify-content: space-between; /* Distribui as imagens horizontalmente */
-        gap: 20px; /* Adicionado espaçamento entre as imagens */
+        display: flex; 
+        flex-wrap: wrap; /* Garante que os itens sejam empacotados em várias linhas */
+        justify-content: space-between; 
+        gap: 20px; 
 
         .imagen {
-            flex: 0 0 calc(33.33% - 20px); /* Calculado o tamanho para exibir três imagens lado a lado com o espaçamento */
+            flex: 0 0 calc(33.33% - 20px); 
             overflow: hidden;
             height: 200px;
 
